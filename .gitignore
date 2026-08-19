@@ -1,0 +1,33 @@
+# Môi trường ảo Python
+venv/
+env/
+
+# Cache của Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# File cấu hình biến môi trường (Bảo mật)
+.env
+
+# Cơ sở dữ liệu nội bộ
+*.db
+*.sqlite3
+face_rec_dev.db
+
+# File mô hình AI dung lượng lớn
+*.onnx
+
+# Bỏ qua mọi file/ảnh rác bên trong các thư mục con
+storage/captures/*
+storage/models/*
+storage/failed/enrollment/*
+storage/failed/preprocessing/*
+storage/failed/recognition/*
+
+# NHƯNG giữ lại các file .gitkeep để duy trì vỏ thư mục khi push code
+!storage/captures/.gitkeep
+!storage/models/.gitkeep
+!storage/failed/enrollment/.gitkeep
+!storage/failed/preprocessing/.gitkeep
+!storage/failed/recognition/.gitkeep
